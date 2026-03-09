@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.2" xmlns:xsi="http://www.w3.org" xsi:noNamespaceSchemaLocation="vast.xsd">
+  <!-- ID này nên map với ID của Quảng cáo trong Database của bạn -->
+  <Ad id="AD_ID_FROM_DB">
+    <InLine>
+      <AdSystem version="1.0">Your_AdServer_Name</AdSystem>
+      <AdTitle><![CDATA[Tên Chiến Dịch Quảng Cáo]]></AdTitle>
+      
+      <!-- UniversalAdId là bắt buộc từ VAST 4.0 để định danh creative duy nhất -->
+      <UniversalAdId idRegistry="yourdomain.com">CREATIVE_ID_FROM_DB</UniversalAdId>
+
+      <!-- URL tracking lượt hiển thị (Impression) -->
+      <Impression id="imp_1">
+        <![CDATA[https://yourserver.com[CACHEBUSTER]]]>
+      </Impression>
+
+      <Creatives>
+        <Creative id="CREATIVE_ID_1" sequence="1">
+          <NonLinearAds>
+            <NonLinear id="overlay_1" width="480" height="70" minSuggestedDuration="00:00:15">
+              
+              <!-- Nguồn ảnh/banner -->
+              <StaticResource creativeType="image/png">
+                <![CDATA[https://cdn.yourserver.com]]>
+              </StaticResource>
+
+              <!-- URL khi người dùng click vào banner -->
+              <NonLinearClickThrough>
+                <![CDATA[https://yourserver.com]]>
+              </NonLinearClickThrough>
+              
+            </NonLinear>
+
+            <TrackingEvents>
+              <!-- Tracking khi banner thực sự hiển thị trên màn hình -->
+              <Tracking event="creativeView"><![CDATA[https://yourserver.com]]></Tracking>
+              <!-- Tracking khi người dùng bấm nút Close (X) trên banner -->
+              <Tracking event="close"><![CDATA[https://yourserver.com]]></Tracking>
+            </TrackingEvents>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+
+      <!-- Thông tin báo cáo lỗi -->
+      <Error><![CDATA[https://yourserver.com[ERRORCODE]&ad_id=AD_ID]]></Error>
+    </InLine>
+  </Ad>
+</VAST>
