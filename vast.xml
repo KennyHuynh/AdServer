@@ -13,7 +13,7 @@
         <Creative id="CREATIVE_001" sequence="1">
           <UniversalAdId idRegistry="kennyhuynh.github.io">CR_GLOBAL_ID_001</UniversalAdId>
           <NonLinearAds>
-            <NonLinear id="overlay_1" width="480" height="70" minSuggestedDuration="00:00:15">
+            <NonLinear id="overlay_1" width="480" height="70" minSuggestedDuration="00:00:4">
               <!-- ĐƯỜNG DẪN CHÍNH XÁC ĐẾN BANNER CỦA BẠN -->
               <StaticResource creativeType="image/png">
                 <![CDATA[https://kennyhuynh.github.io/AdServer/banner.png]]>
