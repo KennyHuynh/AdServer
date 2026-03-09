@@ -5,16 +5,14 @@
       <AdSystem version="1.0">Kenny_Ads_Server</AdSystem>
       <AdTitle><![CDATA[Yospace Non-Linear Campaign]]></AdTitle>
       <UniversalAdId idRegistry="kennyhuynh.github.io">AD_GLOBAL_ID_001</UniversalAdId>
-      
-      <!-- Đã xóa macro để pass anyURI check -->
       <Impression id="imp_1"><![CDATA[https://kennyhuynh.github.io]]></Impression>
-
       <Creatives>
         <Creative id="CREATIVE_001" sequence="1">
           <UniversalAdId idRegistry="kennyhuynh.github.io">CR_GLOBAL_ID_001</UniversalAdId>
           <NonLinearAds>
             <NonLinear id="overlay_1" width="480" height="70" minSuggestedDuration="00:00:15">
-              <StaticResource creativeType="image/png">
+              <!-- DÒNG QUAN TRỌNG ĐỂ YOSPACE THẤY BANNER -->
+              <StaticResource creativeType="banner.png">
                 <![CDATA[https://kennyhuynh.github.io]]>
               </StaticResource>
               <NonLinearClickThrough>
@@ -28,7 +26,6 @@
           </NonLinearAds>
         </Creative>
       </Creatives>
-
       <Error><![CDATA[https://kennyhuynh.github.io]]></Error>
     </InLine>
   </Ad>
