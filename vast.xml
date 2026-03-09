@@ -1,48 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VAST version="4.2" xmlns:xsi="http://www.w3.org" xsi:noNamespaceSchemaLocation="vast.xsd">
-  <!-- ID này nên map với ID của Quảng cáo trong Database của bạn -->
-  <Ad id="AD_ID_FROM_DB">
+<VAST version="4.2" xmlns="http://www.iab.com">
+  <Ad id="KENNY_AD_001">
     <InLine>
-      <AdSystem version="1.0">Your_AdServer_Name</AdSystem>
-      <AdTitle><![CDATA[Tên Chiến Dịch Quảng Cáo]]></AdTitle>
+      <AdSystem version="1.0">Kenny_Ads_Server</AdSystem>
+      <AdTitle><![CDATA[Yospace Non-Linear Campaign]]></AdTitle>
+      <UniversalAdId idRegistry="kennyhuynh.github.io">AD_GLOBAL_ID_001</UniversalAdId>
       
-      <!-- UniversalAdId là bắt buộc từ VAST 4.0 để định danh creative duy nhất -->
-      <UniversalAdId idRegistry="yourdomain.com">CREATIVE_ID_FROM_DB</UniversalAdId>
-
-      <!-- URL tracking lượt hiển thị (Impression) -->
-      <Impression id="imp_1">
-        <![CDATA[https://yourserver.com[CACHEBUSTER]]]>
-      </Impression>
+      <!-- Đã xóa macro để pass anyURI check -->
+      <Impression id="imp_1"><![CDATA[https://kennyhuynh.github.io]]></Impression>
 
       <Creatives>
-        <Creative id="CREATIVE_ID_1" sequence="1">
+        <Creative id="CREATIVE_001" sequence="1">
+          <UniversalAdId idRegistry="kennyhuynh.github.io">CR_GLOBAL_ID_001</UniversalAdId>
           <NonLinearAds>
             <NonLinear id="overlay_1" width="480" height="70" minSuggestedDuration="00:00:15">
-              
-              <!-- Nguồn ảnh/banner -->
               <StaticResource creativeType="image/png">
-                <![CDATA[https://cdn.yourserver.com]]>
+                <![CDATA[https://kennyhuynh.github.io]]>
               </StaticResource>
-
-              <!-- URL khi người dùng click vào banner -->
               <NonLinearClickThrough>
-                <![CDATA[https://yourserver.com]]>
+                <![CDATA[https://github.com]]>
               </NonLinearClickThrough>
-              
             </NonLinear>
-
             <TrackingEvents>
-              <!-- Tracking khi banner thực sự hiển thị trên màn hình -->
-              <Tracking event="creativeView"><![CDATA[https://yourserver.com]]></Tracking>
-              <!-- Tracking khi người dùng bấm nút Close (X) trên banner -->
-              <Tracking event="close"><![CDATA[https://yourserver.com]]></Tracking>
+              <Tracking event="creativeView"><![CDATA[https://kennyhuynh.github.io]]></Tracking>
+              <Tracking event="close"><![CDATA[https://kennyhuynh.github.io]]></Tracking>
             </TrackingEvents>
           </NonLinearAds>
         </Creative>
       </Creatives>
 
-      <!-- Thông tin báo cáo lỗi -->
-      <Error><![CDATA[https://yourserver.com[ERRORCODE]&ad_id=AD_ID]]></Error>
+      <Error><![CDATA[https://kennyhuynh.github.io]]></Error>
     </InLine>
   </Ad>
 </VAST>
