@@ -12,7 +12,7 @@
           <NonLinearAds>
             <NonLinear id="overlay_1" width="480" height="70" minSuggestedDuration="00:00:15">
               <!-- DÒNG QUAN TRỌNG ĐỂ YOSPACE THẤY BANNER -->
-              <StaticResource creativeType="banner.png">
+              <StaticResource creativeType="image/png">
                 <![CDATA[https://kennyhuynh.github.io]]>
               </StaticResource>
               <NonLinearClickThrough>
