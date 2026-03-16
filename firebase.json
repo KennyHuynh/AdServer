@@ -1,0 +1,51 @@
+{
+  "hosting": {
+    "public": "public",
+    "headers": [
+      {
+        "source": "/vast.xml",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      },
+      {
+        "source": "/non_linear_vast.xml",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      },
+      {
+        "source": "/vmap.xml",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      },
+      {
+        "source": "**/*.m3u8",
+        "headers": [
+          { "key": "Content-Type", "value": "application/x-mpegURL" }
+        ]
+      },
+      {
+        "source": "**/*.ts",
+        "headers": [
+          { "key": "Content-Type", "value": "video/mp2t" }
+        ]
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

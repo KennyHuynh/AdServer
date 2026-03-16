@@ -1,0 +1,44 @@
+<VAST version="3.0">
+  <Ad id="test-ad">
+    <InLine>
+
+      <AdSystem>FirebaseAdServer</AdSystem>
+      <AdTitle>Test Ad</AdTitle>
+
+      <Creatives>
+        <Creative>
+          <Linear>
+
+            <Duration>00:00:08</Duration>
+
+            <TrackingEvents>
+
+              <Tracking event="start">
+                https://ssai-test-adserver.web.app/tracking/start
+              </Tracking>
+
+              <Tracking event="complete">
+                https://ssai-test-adserver.web.app/tracking/complete
+              </Tracking>
+
+            </TrackingEvents>
+
+            <MediaFiles>
+
+              <MediaFile
+                delivery="progressive"
+                type="video/mp4"
+                width="640"
+                height="360">
+https://ssai-test-adserver.web.app/ads/ad.mp4
+              </MediaFile>
+
+            </MediaFiles>
+
+          </Linear>
+        </Creative>
+      </Creatives>
+
+    </InLine>
+  </Ad>
+</VAST>

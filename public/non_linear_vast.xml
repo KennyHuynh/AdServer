@@ -1,0 +1,44 @@
+<VAST version="3.0">
+<Ad id="overlay-video">
+
+<InLine>
+
+<AdSystem>FirebaseAdServer</AdSystem>
+<AdTitle>Video Overlay Ad</AdTitle>
+
+<Creatives>
+
+<Creative>
+
+<NonLinearAds>
+
+<NonLinear 
+    width="600" 
+    height="300"
+    minSuggestedDuration="00:00:06"
+    offset="00:00:04">
+
+    <StaticResource creativeType="video/mp4">
+        <![CDATA[
+        https://ssai-test-adserver.web.app/ads/ad.mp4
+        ]]>
+    </StaticResource>
+
+    <!-- <NonLinearClickThrough>
+        <![CDATA[
+        https://advertiser.com
+        ]]>
+    </NonLinearClickThrough> -->
+
+</NonLinear>
+
+</NonLinearAds>
+
+</Creative>
+
+</Creatives>
+
+</InLine>
+
+</Ad>
+</VAST>

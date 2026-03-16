@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VMAP version="1.0">
+
+  <Extensions>
+    <Extension type="yospace">
+      <Session>
+        <PlaybackURL>
+https://res.cloudinary.com/dmypysseg/video/upload/3297559-hd_1920_1080_30fps_i1mf3c.m3u8
+        </PlaybackURL>
+      </Session>
+    </Extension>
+  </Extensions>
+
+</VMAP>
